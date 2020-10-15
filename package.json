@@ -1,0 +1,24 @@
+{
+  "name": "form-with-localstorage",
+  "version": "1.0.0",
+  "description": "The form with saving information in the localStorage",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel localstorage.html",
+    "build": "parcel build localstorage.html --public-url /form-with-localstorage/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/created-with-love/form-with-localstorage.git"
+  },
+  "keywords": [],
+  "author": "Vladymyr Ivanchenko <vladymyr_ivanchenko@bigmir.net>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/created-with-love/form-with-localstorage/issues"
+  },
+  "homepage": "https://github.com/created-with-love/form-with-localstorage#readme",
+  "dependencies": {
+    "lodash.throttle": "^4.1.1"
+  }
+}
