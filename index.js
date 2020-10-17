@@ -1,17 +1,29 @@
 import throttle from 'lodash.throttle';
 import './css/common.css';
 import './css/localstrg.css';
+import './css/feedback.css'
+// import createFeedbackMsg from './templates/feedback-msg.hbs'
+import { createFeedbackMsg } from './createMessage.js'
+import { deleteMessage } from './createMessage.js'
+
 
 const refs = {
   form: document.querySelector('.js-feedback-form'),
   textarea: document.querySelector('.js-feedback-form  textarea'),
   input: document.querySelector('.js-feedback-form  input'),
+  feedbackList: document.querySelector('.feedback-list'),
+  inputName : document.querySelector('.input-name'),
+  submitBtn: document.querySelector('.submit-btn'),
+  id: 1,
 };
 
 refs.form.addEventListener('submit', onFormSubmit);
 
 populateForm();
 
+
+ const feedbacklist = document.querySelector('.feedback-list');
+ let messagesCount = feedbacklist.childElementCount +1;
 /*
  * - Останавливаем поведение по умолчанию
  * - Убираем сообщение из хранилища
@@ -19,6 +31,17 @@ populateForm();
  */
 function onFormSubmit(evt) {
   evt.preventDefault();
+  const feedbackCounter = document.querySelector('.feedback-counter');
+  messagesCount +=1
+
+  if (messagesCount > 0) {
+    feedbackCounter.textContent = null;
+  }
+
+ 
+  const newMessage = createFeedbackMsg(refs.inputName.value, refs.textarea.value, refs.id);
+  refs.feedbackList.insertAdjacentHTML('beforeend', newMessage);
+  refs.id += 1;
 
   console.log('Отправляем форму');
   evt.currentTarget.reset();
@@ -58,4 +81,6 @@ function populateForm() {
 
 }
 
-console.log(refs.form)
+
+
+

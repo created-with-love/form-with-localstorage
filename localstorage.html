@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -13,16 +14,29 @@
     <form class="feedback-form js-feedback-form">
         <label>
             <b>Имя</b>
-            <input type="text" name="name" placeholder="Введите ваше имя" value="Анонимус" />
+            <input type="text" name="name" placeholder="Введите ваше имя" value="Анонимус" required class="input-name name-from-form"/>
         </label>
         <label>
             <b>Сообщение</b>
-            <textarea name="message" rows="6" placeholder="Будем рады услышать Ваши мысли о нашем продукте"></textarea>
+            <textarea name="message" rows="6" placeholder="Будем рады услышать Ваши мысли о нашем продукте" class="textarea"></textarea>
         </label>
-        <button type="submit">Оставить отзыв</button>
+        <button type="submit" class="submit-btn">Оставить отзыв</button>
     </form>
 
+
+    <section class="feedback-section">
+        <div class="feedback-header"></div>
+            <h2>Отзывы</h2>
+            <span class="feedback-counter">Здесь еще нет отзывов, Вы можете оставить первый!</span>
+        </div>
+
+        <ul class="feedback-list">
+        </ul>
+    </section>
+
+    
     <script src="./index.js"></script>
+    <script src="./functionality.js"></script>
 </body>
 
 </html>

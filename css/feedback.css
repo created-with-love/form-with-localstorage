@@ -1,0 +1,59 @@
+.feedback-section {
+  margin-left: 15px;
+}
+
+.feedback-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.feedback-message__item {
+  display: block;
+}
+
+.feedback-message__item:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.textarea {
+  width: 500px;
+  resize: none;
+}
+
+.ta {
+  background-color: rgb(242, 235, 226);
+  padding: 5px;
+}
+
+.feedback-message:not(:last-of-type) {
+  margin-bottom: 25px;
+}
+
+.message-btn {
+  color: rgb(255, 190, 147);
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  width: 150px;
+  margin-left: 10px;
+  border: 2px solod black;
+  background-color: rgb(134, 89, 29);
+}
+
+.input-name {
+  width: 250px;
+  background-color: blanchedalmond;
+  border: 0;
+  font-weight: 700;
+}
+
+.name-from-form {
+  width: 250px;
+  background-color: #fff;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.sda213 {
+  background-color: rgb(242, 235, 226);
+}

@@ -27,3 +27,17 @@
 .feedback-form textarea:focus::placeholder {
   color: transparent;
 }
+
+.submit-btn {
+  color: rgb(255, 190, 147);
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 150px;
+  margin-left: 10px;
+  border: 2px solod black;
+  background-color: rgb(134, 89, 29);
+}
+
+.input-name {
+}
