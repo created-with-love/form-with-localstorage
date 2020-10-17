@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/created-with-love/form-with-localstorage/issues"
   },
-  "homepage": "https://github.com/created-with-love/form-with-localstorage#readme",
+  "homepage": "https://github.com/created-with-love/form-with-localstorage",
   "dependencies": {
     "gh-pages": "^3.1.0",
     "handlebars": "^4.7.6",
