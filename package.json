@@ -4,8 +4,8 @@
   "description": "The form with saving information in the localStorage",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel localstorage.html -p 4444 --open",
-    "build": "parcel build localstorage.html",
+    "dev": "parcel index.html -p 4444 --open",
+    "build": "parcel build index.html",
     "predeploy": "npm run build -- --public-url=/form-with-localstorage/",
     "deploy": "gh-pages -d dist"
   },

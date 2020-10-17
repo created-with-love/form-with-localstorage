@@ -39,3 +39,7 @@ button:hover {
 button:active {
   background-color: green;
 }
+
+.main {
+  margin-left: 150px;
+}
