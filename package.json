@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel localstorage.html -p 4444 --open" ,
-    "prebuild": "parcel build localstorage.html -- --public-url /form-with-localstorage/",
-    "build": "gh-pages -d dist"
+    "build": "parcel build localstorage.html",
+    "predeploy": "npm run build -- --public-url=/form-with-localstorage/",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
